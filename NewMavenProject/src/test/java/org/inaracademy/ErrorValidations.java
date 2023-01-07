@@ -10,7 +10,7 @@ import java.util.List;
 
 public class ErrorValidations extends BaseTest {
 
-    @Test
+    @Test(groups = {"ErrorHandling"})
     public void loginErrorValidation()  {
         final String productName = "ZARA COAT 3";
         CataloguePage cataloguePage = landingPage.loginApplication("yavuzcengaver@gmail.com","Tester56");

@@ -42,7 +42,7 @@ public class BaseTest {
 
         return driver;
     }
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public LandingPage launchApplication() throws IOException {
 
         driver = initialiseDriver();

@@ -13,10 +13,10 @@ import java.time.Duration;
 import java.util.List;
 
 public class SubmitOrderTest extends BaseTest {
-
+    final String productName = "ZARA COAT 3";
     @Test
     public void submitOrder() throws IOException, InterruptedException {
-        final String productName = "ZARA COAT 3";
+
         CataloguePage cataloguePage = landingPage.loginApplication("yavuzcengaver@gmail.com","Tester4256");
 
         List<WebElement> products = cataloguePage.getProducts();
@@ -32,8 +32,11 @@ public class SubmitOrderTest extends BaseTest {
 
         String confirmationMessage = confirmationPage.getConfirmationMessage();
         Assert.assertTrue(confirmationMessage.equals("THANKYOU FOR THE ORDER."));
-
-
-
+    }
+    @Test(dependsOnMethods = {"submitOrder"})
+    public void orderHistoryTest(){
+        CataloguePage cataloguePage = landingPage.loginApplication("yavuzcengaver@gmail.com","Tester4256");
+        OrderPage orderPage = cataloguePage.goToOrderPage();
+        Assert.assertTrue(orderPage.verifyOrderDisplay(productName));
     }
 }
