@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite">
-    <listeners>
-        <listener class-name="TestComponents.Listeners"/>
-    </listeners>
+<suite parallel="tests" name="All Test Suite">
+
+    <groups>
+        <run>
+            <include name="Purchase"/>
+        </run>
+    </groups>
 
     <test thread-count="5" verbose="2" preserve-order="true"
           name="Submit Order Test">

@@ -12,9 +12,9 @@ public class ErrorValidations extends BaseTest {
 
     @Test(groups = {"ErrorHandling"})
     public void loginErrorValidation()  {
-        final String productName = "ZARA COAT 3";
-        CataloguePage cataloguePage = landingPage.loginApplication("yavuzcengaver@gmail.com","Tester56");
-        Assert.assertEquals("Incorrect email or password.",landingPage.getErrorMessage());
+
+        landingPage.loginApplication("yavuzcengaver@gmail.com","Tester6");
+        Assert.assertEquals("Incorrect email or passwod.",landingPage.getErrorMessage());
     }
     @Test
     public void productErrorValidation() throws IOException, InterruptedException {

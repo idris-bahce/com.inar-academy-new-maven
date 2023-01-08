@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/idris/Desktop/NewMaven/com.inar-academy-new-maven/NewMavenProject/src/test/java/Homeworks">
+        <classes>
+            <class name="Homeworks.VerifyProductQuantityInCart_13">
+                <methods>
+                    <include name="homePageVisibility"/>
+                    <include name="verificationOfProductView"/>
+                    <include name="increaseQuantityFour"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
