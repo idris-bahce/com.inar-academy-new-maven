@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/StreamPC/IdeaProjects/automationexercise">
+        <classes>
+            <class name="org.inar.automationexercise.RegistrationTests">
+                <methods>
+                    <include name="TestCase_1_Register_User"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

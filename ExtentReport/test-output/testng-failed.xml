@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="C:/Users/StreamPC/IdeaProjects/automationexercise(failed)">
+    <classes>
+      <class name="org.inar.automationexercise.RegistrationTests">
+        <methods>
+          <include name="setUpSuite"/>
+          <include name="TestCase_1_Register_User"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- org.inar.automationexercise.RegistrationTests -->
+    </classes>
+  </test> <!-- C:/Users/StreamPC/IdeaProjects/automationexercise(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->
