@@ -59,8 +59,6 @@ public class SignupPage extends BasePage {
         setYear(year);
     }
 
-
-
     private void setDay(String day) {
         Select select = new Select(dateOfBirt_DAYs);
         select.selectByVisibleText(day);
