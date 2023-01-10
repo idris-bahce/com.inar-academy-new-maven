@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [All Test Suite]">
+  <test thread-count="5" name="TestCase_01:Register User(failed)">
+    <classes>
+      <class name="org.inar.automationexercise.TestCase_01">
+        <methods>
+          <include name="verifyThatLoggedInAsUsernameIsVisible"/>
+          <include name="verifyThatAccountCreatedIsVisible"/>
+          <include name="setUpSuite"/>
+          <include name="verifyThatAccountDeletedIsVisible"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- org.inar.automationexercise.TestCase_01 -->
+    </classes>
+  </test> <!-- TestCase_01:Register User(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->
