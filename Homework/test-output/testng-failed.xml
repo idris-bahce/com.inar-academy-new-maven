@@ -5,7 +5,6 @@
     <classes>
       <class name="org.inar.automationexercise.TestCase_01">
         <methods>
-          <include name="verifyThatLoggedInAsUsernameIsVisible"/>
           <include name="verifyThatAccountCreatedIsVisible"/>
           <include name="setUpSuite"/>
           <include name="verifyThatAccountDeletedIsVisible"/>
