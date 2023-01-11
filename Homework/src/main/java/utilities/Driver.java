@@ -22,6 +22,8 @@ public class Driver {
                 case "chrome":
                     WebDriverManager.chromedriver().setup();
                     ChromeOptions chromeOptions = new ChromeOptions();
+                    File file = new File("C:\\Users\\idris\\Desktop\\extension_5_3_3_0 (1).crx");
+                    chromeOptions.addExtensions(file);
                     chromeOptions.addArguments("--start-maximized");
                     driverPool.set(new ChromeDriver(chromeOptions));
                     break;

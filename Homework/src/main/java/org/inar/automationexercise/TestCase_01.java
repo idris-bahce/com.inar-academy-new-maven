@@ -50,7 +50,7 @@ public class TestCase_01 extends BaseTest{
         SignupPage signupPage = new SignupPage();
         signupPage.selectTitleMen();
         signupPage.setPassword("123456");
-        signupPage.setDateOfBirt("04","May","1990");
+        signupPage.setDateOfBirt("4","May","1990");
         signupPage.signupForOurNewsletterBox();
         signupPage.receiveSpecialOffersFromOurTeamBox();
         Driver.getDriver().findElement(By.id("first_name")).sendKeys("idris");
@@ -67,7 +67,7 @@ public class TestCase_01 extends BaseTest{
         signupPage.createAccountButton();
         BrowserUtils.waitForVisibility(By.cssSelector("h2[class='title text-center'] b"),2);
         String verifyingString = Driver.getDriver().findElement(By.cssSelector("h2[class='title text-center'] b")).getText();
-        Assert.assertEquals(verifyingString,"Account Created!");
+        Assert.assertEquals(verifyingString,"ACCOUNT CREATED!");
     }
     @Test
     public void verifyThatLoggedInAsUsernameIsVisible(){
@@ -82,7 +82,7 @@ public class TestCase_01 extends BaseTest{
         BrowserUtils.waitForVisibility(By.cssSelector("h2[class='title text-center'] b"),2);
         String verifyingString = Driver.getDriver().findElement(By.cssSelector("h2[class='title text-center'] b")).getText();
         Driver.getDriver().findElement(By.cssSelector(".btn.btn-primary")).click();
-        Assert.assertEquals(verifyingString,"Account Deleted!");
+        Assert.assertEquals(verifyingString,"ACCOUNT DELETED!");
     }
     @AfterSuite
     public void teardown(){

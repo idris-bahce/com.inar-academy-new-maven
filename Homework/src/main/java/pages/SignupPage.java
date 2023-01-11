@@ -1,10 +1,12 @@
 package pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import utilities.Driver;
 
 public class SignupPage extends BasePage{
 
@@ -84,16 +86,19 @@ public class SignupPage extends BasePage{
     }
 
     private void setDay(String day) {
+       // Driver.getDriver().findElement(By.id("days")).click();
         Select select = new Select(dateOfBirt_DAYs);
         select.selectByVisibleText(day);
     }
 
     private void setMonth(String month) {
+       // Driver.getDriver().findElement(By.id("months")).click();
         Select select = new Select(dateOfBirt_MONTHs);
         select.selectByVisibleText(month);
     }
 
     private void setYear(String year) {
+       // Driver.getDriver().findElement(By.id("years")).click();
         Select select = new Select(dateOfBirt_YEARs);
         select.selectByVisibleText(year);
 

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="TestCase_02:Login User with correct email and password">
+        <classes>
+            <class name="org.inar.automationexercise.TestCase_02">
+                <methods>
+                    <include name="verifyHomePageIsVisible"/>
+                    <include name="goToLoginSingUpPage"/>
+                    <include name="verifyThatLoggedInAsUsernameIsVisible"/>
+                    <include name="verifyThatAccountDeletedIsVisible"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
