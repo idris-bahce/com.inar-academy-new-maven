@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Web Automation Results</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jan 9, 2023 01:00:46 PM</span></a>
+<a href="#"><span class="badge badge-primary">Jan 10, 2023 02:29:07 PM</span></a>
 </li>
 </ul>
 </div>
@@ -45,6 +45,11 @@
 <li class="nav-item dropdown" onclick="toggleView('test-view')">
 <a id="nav-test" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
@@ -67,6 +72,7 @@
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
 <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -81,7 +87,7 @@
           <div class="test-detail">
             <p class="name">C:\Users\idris\Desktop\NewMaven\com.inar-academy-new-maven\NewMavenProject\reports\index.html</p>
             <p class="text-sm">
-              <span>1:00:46 PM</span> / <span>00:00:00:000</span>
+              <span>2:29:07 PM</span> / <span>00:00:00:000</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -90,8 +96,8 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">C:\Users\idris\Desktop\NewMaven\com.inar-academy-new-maven\NewMavenProject\reports\index.html</h5>
-<span class='badge badge-success'>01.09.2023 1:00:46 PM</span>
-<span class='badge badge-danger'>01.09.2023 1:00:46 PM</span>
+<span class='badge badge-success'>01.10.2023 2:29:07 PM</span>
+<span class='badge badge-danger'>01.10.2023 2:29:07 PM</span>
 <span class='badge badge-default'>00:00:00:000</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
@@ -107,7 +113,7 @@
           <div class="test-detail">
             <p class="name">submitOrder</p>
             <p class="text-sm">
-              <span>1:00:51 PM</span> / <span>00:00:00:000</span>
+              <span>2:29:14 PM</span> / <span>00:00:00:000</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -116,8 +122,8 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">submitOrder</h5>
-<span class='badge badge-success'>01.09.2023 1:00:51 PM</span>
-<span class='badge badge-danger'>01.09.2023 1:00:51 PM</span>
+<span class='badge badge-success'>01.10.2023 2:29:14 PM</span>
+<span class='badge badge-danger'>01.10.2023 2:29:14 PM</span>
 <span class='badge badge-default'>00:00:00:000</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
@@ -133,7 +139,7 @@
           <div class="test-detail">
             <p class="name">loginErrorValidation</p>
             <p class="text-sm">
-              <span>1:00:52 PM</span> / <span>00:00:03:421</span>
+              <span>2:29:15 PM</span> / <span>00:00:05:032</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -142,9 +148,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">loginErrorValidation</h5>
-<span class='badge badge-success'>01.09.2023 1:00:52 PM</span>
-<span class='badge badge-danger'>01.09.2023 1:00:55 PM</span>
-<span class='badge badge-default'>00:00:03:421</span>
+<span class='badge badge-success'>01.10.2023 2:29:15 PM</span>
+<span class='badge badge-danger'>01.10.2023 2:29:20 PM</span>
+<span class='badge badge-default'>00:00:05:032</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -156,14 +162,14 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>1:00:53 PM</td>
+        <td>2:29:16 PM</td>
         <td>
           Test passed!
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>1:00:55 PM</td>
+        <td>2:29:20 PM</td>
         <td>
           Test passed!
         </td>
@@ -173,31 +179,100 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="4"
+        <li class="test-item"  status="fail" test-id="4"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">productErrorValidation</p>
             <p class="text-sm">
-              <span>1:00:57 PM</span> / <span>00:00:00:000</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>2:29:21 PM</span> / <span>00:00:05:997</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">productErrorValidation</h5>
-<span class='badge badge-success'>01.09.2023 1:00:57 PM</span>
-<span class='badge badge-danger'>01.09.2023 1:00:57 PM</span>
-<span class='badge badge-default'>00:00:00:000</span>
+<h5 class="test-status text-fail">productErrorValidation</h5>
+<span class='badge badge-success'>01.10.2023 2:29:21 PM</span>
+<span class='badge badge-danger'>01.10.2023 2:29:27 PM</span>
+<span class='badge badge-default'>00:00:05:997</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
 </div>
-</div>          </div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\idris\Desktop\NewMaven\com.inar-academy-new-maven\NewMavenProject\reports\productErrorValidation.png' src="C:\Users\idris\Desktop\NewMaven\com.inar-academy-new-maven\NewMavenProject\reports\productErrorValidation.png">
+    <div class="title">productErrorValidation</div>
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>2:29:27 PM</td>
+        <td>
+          <textarea readonly class="code-block">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button _ngcontent-mha-c33="" routerlink="/dashboard/cart" class="btn btn-custom" style="margin-top: -10px;" tabindex="0">...</button> is not clickable at point (1284, 27). Other element would receive the click: <div _ngcontent-mha-c31="" class="ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed; opacity: 1;">...</div>
+  (Session info: chrome=108.0.5359.125)
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [774a91505b6ffe46ff2a43cdfe7954b0, clickElement {id=0bba8858-1014-4769-b06d-55f2ac1e9536}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\idris\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55220}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55220/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (774a91505b6ffe46ff2a43cdfe7954b0)] -> css selector: [routerlink*='cart']]
+Session ID: 774a91505b6ffe46ff2a43cdfe7954b0
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy15.click(Unknown Source)
+	at AbstractComponents.AbstractComponent.goToCartPage(AbstractComponent.java:28)
+	at org.inaracademy.ErrorValidations.productErrorValidation(ErrorValidations.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</textarea>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
         </li>
         <li class="test-item"  status="pass" test-id="5"
           author=""
@@ -206,7 +281,7 @@
           <div class="test-detail">
             <p class="name">submitOrder</p>
             <p class="text-sm">
-              <span>1:00:59 PM</span> / <span>00:00:03:780</span>
+              <span>2:29:31 PM</span> / <span>00:00:05:714</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -215,9 +290,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">submitOrder</h5>
-<span class='badge badge-success'>01.09.2023 1:00:59 PM</span>
-<span class='badge badge-danger'>01.09.2023 1:01:03 PM</span>
-<span class='badge badge-default'>00:00:03:780</span>
+<span class='badge badge-success'>01.10.2023 2:29:31 PM</span>
+<span class='badge badge-danger'>01.10.2023 2:29:37 PM</span>
+<span class='badge badge-default'>00:00:05:714</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -229,7 +304,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>1:01:03 PM</td>
+        <td>2:29:37 PM</td>
         <td>
           Test passed!
         </td>
@@ -246,7 +321,7 @@
           <div class="test-detail">
             <p class="name">orderHistoryTest</p>
             <p class="text-sm">
-              <span>1:01:07 PM</span> / <span>00:00:02:985</span>
+              <span>2:29:45 PM</span> / <span>00:00:02:578</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -255,9 +330,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">orderHistoryTest</h5>
-<span class='badge badge-success'>01.09.2023 1:01:07 PM</span>
-<span class='badge badge-danger'>01.09.2023 1:01:10 PM</span>
-<span class='badge badge-default'>00:00:02:985</span>
+<span class='badge badge-success'>01.10.2023 2:29:45 PM</span>
+<span class='badge badge-danger'>01.10.2023 2:29:48 PM</span>
+<span class='badge badge-default'>00:00:02:578</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -269,14 +344,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>1:01:08 PM</td>
-        <td>
-          Test passed!
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>1:01:10 PM</td>
+        <td>2:29:48 PM</td>
         <td>
           Test passed!
         </td>
@@ -295,30 +363,79 @@
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="container-fluid p-4 view dashboard-view">
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.openqa.selenium.ElementClickInterceptedException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.ElementClickInterceptedException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:29:21 PM</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>productErrorValidation</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
 <div class="row">
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jan 9, 2023 01:00:46 PM</h3>
+<h3>Jan 10, 2023 02:29:07 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jan 9, 2023 01:01:10 PM</h3>
+<h3>Jan 10, 2023 02:29:48 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>6</h3>
+<h3>5</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>0</h3>
+<h3>1</h3>
 </div></div>
 </div>
 </div>
@@ -334,12 +451,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'>
-<b>6</b> tests passed
+<div><small data-tooltip='83%'>
+<b>5</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> tests failed,
+<small data-tooltip='16%'><b>1</b> tests failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -357,9 +474,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>5</b> events passed</small></div>
+<div><small data-tooltip='80%'><b>4</b> events passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> events failed,
+<small data-tooltip='20%'><b>1</b> events failed,
 <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -376,7 +493,7 @@
 </div></div>
 <script>
 var timeline = {
-"C:\Users\idris\Desktop\NewMaven\com.inar-academy-new-maven\NewMavenProject\reports\index.html":0,"submitOrder":0,"loginErrorValidation":3.421,"productErrorValidation":0,"submitOrder":3.78,"orderHistoryTest":2.985
+"C:\Users\idris\Desktop\NewMaven\com.inar-academy-new-maven\NewMavenProject\reports\index.html":0,"submitOrder":0,"loginErrorValidation":5.032,"productErrorValidation":5.997,"submitOrder":5.714,"orderHistoryTest":2.578
 };
 </script>
 <div class="row">
@@ -399,8 +516,8 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 6,
-failParent: 0,
+passParent: 5,
+failParent: 1,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
@@ -416,8 +533,8 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 5,
-failEvents: 0,
+passEvents: 4,
+failEvents: 1,
 warningEvents: 0,
 skipEvents: 0,
 infoEvents: 0

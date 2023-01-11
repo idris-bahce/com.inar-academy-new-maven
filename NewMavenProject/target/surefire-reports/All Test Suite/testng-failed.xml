@@ -8,8 +8,8 @@
     <classes>
       <class name="org.inaracademy.ErrorValidations">
         <methods>
-          <include name="loginErrorValidation"/>
           <include name="launchApplication"/>
+          <include name="productErrorValidation"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- org.inaracademy.ErrorValidations -->
