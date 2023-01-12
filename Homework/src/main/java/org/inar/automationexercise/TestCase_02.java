@@ -37,10 +37,10 @@ public class TestCase_02 extends BaseTest{
     }
     @Test
     public void verifyThatLoggedInAsUsernameIsVisible(){
-        LoginPage loginPage = new LoginPage();
-        loginPage.sendEmail("bahce@bahce");
-        loginPage.sendPassword("bahce");
-        loginPage.login();
+
+        pages.getLoginPage().sendEmail("bahce@bahce");
+        pages.getLoginPage().sendPassword("bahce");
+        pages.getLoginPage().login();
         BrowserUtils.waitForVisibility(By.cssSelector("li:nth-child(10) a:nth-child(1)"),2);
         String verifyingString = Driver.getDriver().findElement(By.cssSelector("li:nth-child(10) a:nth-child(1)")).getText();
         Assert.assertEquals(verifyingString,"Logged in as bahce");

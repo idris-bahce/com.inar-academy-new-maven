@@ -11,6 +11,9 @@ public class HomePage extends BasePage{
     @FindBy(css = "a[href='/login']")
     private WebElement signupButton;
 
+    @FindBy(css = "a[href='/logout']")
+    private WebElement logout;
+
     public void clickToProducts() {
         productsButton.click();
     }
@@ -18,4 +21,7 @@ public class HomePage extends BasePage{
         signupButton.click();
     }
 
+    public void logout(){
+        logout.click();
+    }
 }

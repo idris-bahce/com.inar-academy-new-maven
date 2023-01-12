@@ -5,6 +5,14 @@ import org.openqa.selenium.support.FindBy;
 
 public class LoginPage extends BasePage{
 
+    @FindBy(css = "input[placeholder='Name']")
+    private WebElement nameToSignup;
+
+    @FindBy(css = "input[data-qa='signup-email']")
+    private WebElement emailToSignup;
+    @FindBy(css = "button[data-qa='signup-button']")
+    private WebElement signupButton;
+
     @FindBy(css = "input[data-qa='login-email']")
     private WebElement email;
 
@@ -22,5 +30,14 @@ public class LoginPage extends BasePage{
     }
     public void login(){
         loginButton.click();
+    }
+    public void sendEmailToSignup(String email){
+        this.emailToSignup.sendKeys(email);
+    }
+    public void sendNameToSignup(String name){
+        this.nameToSignup.sendKeys(name);
+    }
+    public void clickToSignupButton(){
+        this.signupButton.click();
     }
 }

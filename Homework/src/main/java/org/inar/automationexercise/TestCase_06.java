@@ -2,15 +2,13 @@ package org.inar.automationexercise;
 
 import org.openqa.selenium.By;
 import org.testng.Assert;
-import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
-import pages.HomePage;
 import utilities.BrowserUtils;
 import utilities.ConfigurationReader;
 import utilities.Driver;
 
-public class TestCase_03 extends BaseTest{
+public class TestCase_06 extends BaseTest{
     @BeforeSuite
     public void setUpSuite() {
         // code that is executed before the entire test suite
@@ -27,22 +25,10 @@ public class TestCase_03 extends BaseTest{
         Assert.assertEquals(verifyingWord,"Home");
     }
     @Test
-    public void verifyThatLoginToYourAccountIsVisible(){
-        pages.getHomePage().clickToSignupAndLoginButton();
-        BrowserUtils.waitForVisibility(By.cssSelector("div[class='login-form'] h2"),2);
-        String verifyingString = Driver.getDriver().findElement(By.cssSelector("div[class='login-form'] h2")).getText();
-        Assert.assertEquals(verifyingString,"Login to your account");
-    }
-    @Test
-    public void verifyErrorYourEmailOrPasswordIsIncorrectIsVisible(){
-        pages.getLoginPage().sendEmail("asd@asda");
-        pages.getLoginPage().sendPassword("adsad");
-        pages.getLoginPage().login();
-        String verifyingString = Driver.getDriver().findElement(By.xpath("//input[@name='password']/following::p[1]")).getText();
-        Assert.assertEquals(verifyingString,"Your email or password is incorrect!");
-    }
-    @AfterSuite
-    public void teardown(){
-        Driver.getDriver().quit();
+    public void verifyGetInTouchIsVisible(){
+        pages.getHomePage().navigateTo("Contact us");
+        BrowserUtils.waitForVisibility(By.cssSelector("div[class='contact-form'] h2[class='title text-center']"),2);
+        String verifyingString = Driver.getDriver().findElement(By.cssSelector("div[class='contact-form'] h2[class='title text-center']")).getText();
+        Assert.assertEquals(verifyingString,"GET IN TOUCH");
     }
 }
