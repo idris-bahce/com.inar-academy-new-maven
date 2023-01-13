@@ -1,7 +1,9 @@
 package FrameWork;
 
 import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.CellType;
 import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.util.NumberToTextConverter;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
@@ -26,10 +28,11 @@ public class DataDriven {
                 int column = 0;
                 while (cell.hasNext()){
                     Cell value = cell.next();
-                    if (value.getStringCellValue().equalsIgnoreCase("test cases")){
+                    if (value.getStringCellValue().equals("Data2")){
                         column = k;
                     }
                     k++;
+                    System.out.println(column);
                 }
 
                 while (rows.hasNext()){
@@ -37,7 +40,12 @@ public class DataDriven {
                     if (row.getCell(column).getStringCellValue().equalsIgnoreCase(dataName)){
                         Iterator<Cell> cv = row.cellIterator();
                         while (cv.hasNext()){
-                            data.add(cv.next().getStringCellValue());
+                            Cell c = cv.next();
+                            if (c.getCellType()== CellType.STRING) {
+                                data.add(c.getStringCellValue());
+                            }else {
+                                data.add(NumberToTextConverter.toText(c.getNumericCellValue()));
+                            }
                         }
                     }
                 }
