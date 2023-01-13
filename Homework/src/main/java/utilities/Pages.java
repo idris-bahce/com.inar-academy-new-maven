@@ -1,9 +1,6 @@
 package utilities;
 
-import pages.HomePage;
-import pages.LoginPage;
-import pages.ProductPage;
-import pages.SignupPage;
+import pages.*;
 
 public class Pages {
 
@@ -14,12 +11,14 @@ public class Pages {
     private ProductPage productPage;
 
     private SignupPage signupPage;
+    private ContactUsPage contactUsPage;
 
     public Pages() {
         this.homePage = new HomePage();
         this.loginPage = new LoginPage();
         this.productPage = new ProductPage();
         this.signupPage = new SignupPage();
+        this.contactUsPage = new ContactUsPage();
     }
 
     public HomePage getHomePage() {
@@ -36,5 +35,8 @@ public class Pages {
 
     public SignupPage getSignupPage() {
         return signupPage;
+    }
+    public ContactUsPage getContactUsPage(){
+        return contactUsPage;
     }
 }
