@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="Test Case 12: Add Products in Cart">
+        <classes>
+            <class name="org.inar.automationexercise.TestCase_12">
+                <methods>
+                    <include name="verifyHomePageIsVisible"/>
+                    <include name="verifyBothProductsAreAddedToCart"/>
+                    <include name="verifyTheirPricesQuantityAndTotalPrice"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

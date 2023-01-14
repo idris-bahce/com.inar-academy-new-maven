@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="Test Case 11: Verify Subscription in Cart page">
+        <classes>
+            <class name="org.inar.automationexercise.TestCase_11">
+                <methods>
+                    <include name="verifyHomePageIsVisible"/>
+                    <include name="verifyTextSubscription"/>
+                    <include name="verifySuccessMessageYouHaveBeenSuccessfullySubscribedIsVisible"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

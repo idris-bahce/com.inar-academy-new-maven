@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="Test Case 14: Place Order: Register while Checkout">
+        <classes>
+            <class name="org.inar.automationexercise.TestCase_14">
+                <methods>
+                    <include name="verifyHomePageIsVisible"/>
+                    <include name="verifyThatCartPageIsDisplayed"/>
+                    <include name="verifyAccountCreatedAndClickContinueButton"/>
+                    <include name="verifyLoggedInAsUsernameAtTop"/>
+                    <include name="verifyAddressDetailsAndReviewYourOrder"/>
+                    <include name="verifySuccessMessageOurOrderHasBeenPlacedSuccessfully"/>
+                    <include name="verifyACCOUNTDELETEDAndClickContinueButton"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
