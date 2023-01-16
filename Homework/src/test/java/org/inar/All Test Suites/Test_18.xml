@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="Test Case 18: View Category Products">
+        <classes>
+            <class name="org.inar.automationexercise.TestCase_18">
+                <methods>
+                    <include name="verifyHomePageIsVisible"/>
+                    <include name="verifyThatCategoriesAreVisibleOnLeftSideBar"/>
+                    <include name="verifyThatCategoryPageIsDisplayedAndConfirmTextWOMEN_DRESS_PRODUCTS"/>
+                    <include name="verifyThatUserIsNavigatedToThatCategoryPage"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

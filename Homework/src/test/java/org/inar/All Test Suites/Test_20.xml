@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="Test Case 20: Search Products and Verify Cart After Login">
+        <classes>
+            <class name="org.inar.automationexercise.TestCase_20">
+                <methods>
+                    <include name="verifyHomePageIsVisible"/>
+                    <include name="verifyUserIsNavigatedToALLPRODUCTSPageSuccessfully"/>
+                    <include name="verifySEARCHEDPRODUCTSIsVisible"/>
+                    <include name="verifyAllTheProductsRelatedToSearchAreVisible"/>
+                    <include name="clickCartButtonAndVerifyThatProductsAreVisibleInCart"/>
+                    <include name="verifyThatThoseProductsAreVisibleInCartAfterLoginAsWell"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="Test Case 23: Verify address details in checkout page">
+        <classes>
+            <class name="org.inar.automationexercise.TestCase_23">
+                <methods>
+                    <include name="verifyHomePageIsVisible"/>
+                    <include name="verifyNewUserSignupVisible"/>
+                    <include name="verifyThatEnterAccountInformationIsVisible"/>
+                    <include name="verifyThatAccountCreatedIsVisible"/>
+                    <include name="verifyThatLoggedInAsUsernameIsVisible"/>
+                    <include name="verifyThatCartPageIsDisplayed"/>
+                    <include name="verifyAddressDetailsAndReviewYourOrder"/>
+                    <include name="verifySuccessMessageOurOrderHasBeenPlacedSuccessfully"/>
+                    <include name="deleteAccount"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

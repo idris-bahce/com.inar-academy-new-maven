@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="Test Case 25: Verify Scroll Up using 'Arrow' button and Scroll Down functionality">
+        <classes>
+            <class name="org.inar.automationexercise.TestCase_25">
+                <methods>
+                    <include name="verifyHomePageIsVisible"/>
+                    <include name="verifySUBSCRIPTIONIsVisible"/>
+                    <include
+                            name="verifyThatPageIsScrolledUpAndFullFledgedPracticeWebsiteForAutomationEngineersTextIsVisibleOnScreen"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
