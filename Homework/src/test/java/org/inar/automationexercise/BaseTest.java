@@ -1,10 +1,10 @@
 package org.inar.automationexercise;
 
 import org.apache.commons.io.FileUtils;
+import org.inar.utilities.Pages;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-import utilities.Driver;
-import utilities.Pages;
+import org.inar.utilities.Driver;
 
 import java.io.File;
 import java.io.IOException;

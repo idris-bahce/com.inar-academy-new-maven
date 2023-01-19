@@ -6,10 +6,10 @@ import org.testng.Assert;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
-import pages.SignupPage;
-import utilities.BrowserUtils;
-import utilities.ConfigurationReader;
-import utilities.Driver;
+import org.inar.pages.SignupPage;
+import org.inar.utilities.BrowserUtils;
+import org.inar.utilities.ConfigurationReader;
+import org.inar.utilities.Driver;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -17,7 +17,7 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-public class TestCase_24 extends BaseTest{
+public class TestCase_24 extends BaseTest {
     @BeforeSuite
     public void setUpSuite() {
         // code that is executed before the entire test suite

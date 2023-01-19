@@ -5,11 +5,11 @@ import org.testng.Assert;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
-import pages.HomePage;
-import pages.SignupPage;
-import utilities.BrowserUtils;
-import utilities.ConfigurationReader;
-import utilities.Driver;
+import org.inar.pages.HomePage;
+import org.inar.pages.SignupPage;
+import org.inar.utilities.BrowserUtils;
+import org.inar.utilities.ConfigurationReader;
+import org.inar.utilities.Driver;
 
 public class TestCase_01 extends BaseTest{
 

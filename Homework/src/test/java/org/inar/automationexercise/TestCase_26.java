@@ -6,9 +6,9 @@ import org.testng.Assert;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
-import utilities.BrowserUtils;
-import utilities.ConfigurationReader;
-import utilities.Driver;
+import org.inar.utilities.BrowserUtils;
+import org.inar.utilities.ConfigurationReader;
+import org.inar.utilities.Driver;
 
 public class TestCase_26 extends BaseTest{
     private static JavascriptExecutor j = (JavascriptExecutor) Driver.getDriver();

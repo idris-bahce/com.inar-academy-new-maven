@@ -1,15 +1,15 @@
 package org.inar.automationexercise;
 
+import org.inar.pages.HomePage;
+import org.inar.utilities.ConfigurationReader;
+import org.inar.utilities.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
-import pages.HomePage;
-import utilities.BrowserUtils;
-import utilities.ConfigurationReader;
-import utilities.Driver;
+import org.inar.utilities.BrowserUtils;
 
 import java.io.File;
 import java.io.FileNotFoundException;

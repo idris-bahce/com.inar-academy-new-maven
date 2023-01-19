@@ -1,4 +1,4 @@
-package pages;
+package org.inar.pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;

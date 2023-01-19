@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
     <listeners>
-        <listener class-name="utilities.Listeners"/>
+        <listener class-name="org.inar.utilities.Listeners"/>
     </listeners>
     <test thread-count="5" verbose="2" preserve-order="true"
           name="Test Case 14: Place Order: Register while Checkout">

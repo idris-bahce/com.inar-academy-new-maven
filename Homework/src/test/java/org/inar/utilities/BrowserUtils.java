@@ -1,4 +1,4 @@
-package utilities;
+package org.inar.utilities;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;

@@ -1,14 +1,14 @@
 package org.inar.automationexercise;
 
+import org.inar.utilities.BrowserUtils;
+import org.inar.utilities.ConfigurationReader;
+import org.inar.utilities.Driver;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-import utilities.BrowserUtils;
-import utilities.ConfigurationReader;
-import utilities.Driver;
 
 public class TestCase_08 extends BaseTest{
     @BeforeSuite
