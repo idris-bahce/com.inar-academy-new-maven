@@ -2,6 +2,7 @@ package org.inar.automationexercise;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
@@ -65,8 +66,10 @@ public class TestCase_14 extends BaseTest{
         Driver.getDriver().findElement(By.id("company")).sendKeys("inar");
         Driver.getDriver().findElement(By.id("address1")).sendKeys("Cal sok. Silver aven.");
         Driver.getDriver().findElement(By.id("address2")).sendKeys("Cal sok. New aven.");
-        Driver.getDriver().findElement(By.id("state")).sendKeys("Pencap");
-        Driver.getDriver().findElement(By.id("city")).sendKeys("Delhi");
+        Select select = new Select(Driver.getDriver().findElement(By.id("country")));
+        select.selectByVisibleText("Canada");
+        Driver.getDriver().findElement(By.id("state")).sendKeys("Ontario");
+        Driver.getDriver().findElement(By.id("city")).sendKeys("Toronto");
         Driver.getDriver().findElement(By.id("zipcode")).sendKeys("03300");
         Driver.getDriver().findElement(By.id("mobile_number")).sendKeys("1425369875");
         signupPage.createAccountButton();
