@@ -1,6 +1,7 @@
 package org.inar.utilities;
 
-import pages.*;
+import org.inar.pages.*;
+
 
 public class Pages {
 
