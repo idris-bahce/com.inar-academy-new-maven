@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [All Test Suite]">
+  <test thread-count="5" verbose="0" name="C:/Users/idris/Desktop/NewMaven/com.inar-academy-new-maven/Homework/src/test/java/org/inar/automationexercise(failed)">
+    <classes>
+      <class name="org.inar.automationexercise.TestCase_10">
+        <methods>
+          <include name="setUpSuite"/>
+          <include name="verifySuccessMessageYouHaveBeenSuccessfullySubscribedIsVisible"/>
+          <include name="teardown"/>
+          <include name="verifyTextSubscription"/>
+          <include name="verifyHomePageIsVisible"/>
+        </methods>
+      </class> <!-- org.inar.automationexercise.TestCase_10 -->
+      <class name="org.inar.automationexercise.TestCase_15">
+        <methods>
+          <include name="verifySuccessMessageOurOrderHasBeenPlacedSuccessfully"/>
+          <include name="verifyThatCartPageIsDisplayed"/>
+          <include name="teardown"/>
+          <include name="verifyACCOUNTDELETEDAndClickContinueButton"/>
+          <include name="verifyHomePageIsVisible"/>
+          <include name="verifyAccountCreatedAndClickContinueButton"/>
+          <include name="verifyAddressDetailsAndReviewYourOrder"/>
+          <include name="verifyLoggedInAsUsernameAtTop"/>
+          <include name="setUpSuite"/>
+        </methods>
+      </class> <!-- org.inar.automationexercise.TestCase_15 -->
+      <class name="org.inar.automationexercise.TestCase_08">
+        <methods>
+          <include name="setUpSuite"/>
+          <include name="verifyHomePageIsVisible"/>
+          <include name="verifyThatDetailsAreVisible"/>
+          <include name="teardown"/>
+          <include name="verifyUserIsNavigatedToAllProductsPageSuccessfully"/>
+        </methods>
+      </class> <!-- org.inar.automationexercise.TestCase_08 -->
+      <class name="org.inar.automationexercise.TestCase_17">
+        <methods>
+          <include name="verifyHomePageIsVisible"/>
+          <include name="verifyThatCartPageIsDisplayed"/>
+          <include name="teardown"/>
+          <include name="verifyThatProductIsRemovedFromTheCart"/>
+          <include name="setUpSuite"/>
+        </methods>
+      </class> <!-- org.inar.automationexercise.TestCase_17 -->
+      <class name="org.inar.automationexercise.TestCase_05">
+        <methods>
+          <include name="teardown"/>
+          <include name="verifyErrorEmailAddressAlreadyExistIsVisible"/>
+          <include name="verifyHomePageIsVisible"/>
+          <include name="verifyNewUserSignupIsVisible"/>
+          <include name="setUpSuite"/>
+        </methods>
+      </class> <!-- org.inar.automationexercise.TestCase_05 -->
+      <class name="org.inar.automationexercise.TestCase_07">
+        <methods>
+          <include name="verifyHomePageIsVisible"/>
+          <include name="verifyUserIsNavigatedToTestCasesPageSuccessfully"/>
+          <include name="setUpSuite"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- org.inar.automationexercise.TestCase_07 -->
+      <class name="org.inar.automationexercise.TestCase_20">
+        <methods>
+          <include name="clickCartButtonAndVerifyThatProductsAreVisibleInCart"/>
+          <include name="verifyAllTheProductsRelatedToSearchAreVisible"/>
+          <include name="setUpSuite"/>
+          <include name="verifyHomePageIsVisible"/>
+          <include name="verifySEARCHEDPRODUCTSIsVisible"/>
+          <include name="verifyUserIsNavigatedToALLPRODUCTSPageSuccessfully"/>
+          <include name="teardown"/>
+          <include name="verifyThatThoseProductsAreVisibleInCartAfterLoginAsWell"/>
+        </methods>
+      </class> <!-- org.inar.automationexercise.TestCase_20 -->
+      <class name="org.inar.automationexercise.TestCase_25">
+        <methods>
+          <include name="setUpSuite"/>
+          <include name="verifySUBSCRIPTIONIsVisible"/>
+          <include name="teardown"/>
+          <include name="verifyHomePageIsVisible"/>
+          <include name="verifyThatPageIsScrolledUpAndFullFledgedPracticeWebsiteForAutomationEngineersTextIsVisibleOnScreen"/>
+        </methods>
+      </class> <!-- org.inar.automationexercise.TestCase_25 -->
+      <class name="org.inar.automationexercise.TestCase_14">
+        <methods>
+          <include name="verifyThatCartPageIsDisplayed"/>
+          <include name="setUpSuite"/>
+          <include name="verifyACCOUNTDELETEDAndClickContinueButton"/>
+          <include name="verifyLoggedInAsUsernameAtTop"/>
+          <include name="verifyAccountCreatedAndClickContinueButton"/>
+          <include name="teardown"/>
+          <include name="verifyHomePageIsVisible"/>
+          <include name="verifySuccessMessageOurOrderHasBeenPlacedSuccessfully"/>
+          <include name="verifyAddressDetailsAndReviewYourOrder"/>
+        </methods>
+      </class> <!-- org.inar.automationexercise.TestCase_14 -->
+      <class name="org.inar.automationexercise.TestCase_23">
+        <methods>
+          <include name="verifyThatLoggedInAsUsernameIsVisible"/>
+          <include name="verifyThatAccountCreatedIsVisible"/>
+          <include name="setUpSuite"/>
+          <include name="verifyACCOUNTDELETEDAndClickContinueButton"/>
+          <include name="verifyHomePageIsVisible"/>
+          <include name="verifySuccessMessageOurOrderHasBeenPlacedSuccessfully"/>
+          <include name="verifyThatEnterAccountInformationIsVisible"/>
+          <include name="verifyNewUserSignupVisible"/>
+          <include name="verifyAddressDetailsAndReviewYourOrder"/>
+          <include name="teardown"/>
+          <include name="verifyThatCartPageIsDisplayed"/>
+        </methods>
+      </class> <!-- org.inar.automationexercise.TestCase_23 -->
+      <class name="org.inar.automationexercise.TestCase_02">
+        <methods>
+          <include name="verifyHomePageIsVisible"/>
+          <include name="setUpSuite"/>
+          <include name="verifyThatAccountDeletedIsVisible"/>
+          <include name="verifyThatLoggedInAsUsernameIsVisible"/>
+          <include name="teardown"/>
+          <include name="goToLoginSingUpPage"/>
+        </methods>
+      </class> <!-- org.inar.automationexercise.TestCase_02 -->
+      <class name="org.inar.automationexercise.TestCase_13">
+        <methods>
+          <include name="verifyHomePageIsVisible"/>
+          <include name="setUpSuite"/>
+          <include name="verifyProductDetailIsOpened"/>
+          <include name="teardown"/>
+          <include name="verifyThatProductIsDisplayedInCartPageWithExactQuantity"/>
+        </methods>
+      </class> <!-- org.inar.automationexercise.TestCase_13 -->
+      <class name="org.inar.automationexercise.TestCase_12">
+        <methods>
+          <include name="setUpSuite"/>
+          <include name="verifyHomePageIsVisible"/>
+          <include name="teardown"/>
+          <include name="verifyBothProductsAreAddedToCart"/>
+          <include name="verifyTheirPricesQuantityAndTotalPrice"/>
+        </methods>
+      </class> <!-- org.inar.automationexercise.TestCase_12 -->
+      <class name="org.inar.automationexercise.TestCase_19">
+        <methods>
+          <include name="setUpSuite"/>
+          <include name="verifyHomePageIsVisible"/>
+          <include name="verifyThatUserIsNavigatedToThatBrandPageAndCanSeeProducts"/>
+          <include name="verifyThatUserIsNavigatedToBrandPageAndBrandProductsAreDisplayed"/>
+          <include name="teardown"/>
+          <include name="verifyThatBrandsAreVisibleOnLeftSideBar"/>
+        </methods>
+      </class> <!-- org.inar.automationexercise.TestCase_19 -->
+      <class name="org.inar.automationexercise.TestCase_06">
+        <methods>
+          <include name="verifyHomePageIsVisible"/>
+          <include name="teardown"/>
+          <include name="verifyHomePageIsVisible2"/>
+          <include name="setUpSuite"/>
+          <include name="verifySuccessMessageSuccessYourDetailsHaveBeenSubmittedSuccessfullyIsVisible"/>
+          <include name="verifyGetInTouchIsVisible"/>
+        </methods>
+      </class> <!-- org.inar.automationexercise.TestCase_06 -->
+      <class name="org.inar.automationexercise.TestCase_01">
+        <methods>
+          <include name="verifyThatLoggedInAsUsernameIsVisible"/>
+          <include name="verifyThatAccountCreatedIsVisible"/>
+          <include name="setUpSuite"/>
+          <include name="verifyHomePageIsVisible"/>
+          <include name="verifyThatEnterAccountInformationIsVisible"/>
+          <include name="verifyNewUserSignupVisible"/>
+          <include name="verifyThatAccountDeletedIsVisible"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- org.inar.automationexercise.TestCase_01 -->
+      <class name="org.inar.automationexercise.TestCase_03">
+        <methods>
+          <include name="verifyThatLoginToYourAccountIsVisible"/>
+          <include name="setUpSuite"/>
+          <include name="verifyErrorYourEmailOrPasswordIsIncorrectIsVisible"/>
+          <include name="teardown"/>
+          <include name="verifyHomePageIsVisible"/>
+        </methods>
+      </class> <!-- org.inar.automationexercise.TestCase_03 -->
+      <class name="org.inar.automationexercise.TestCase_11">
+        <methods>
+          <include name="verifyTextSubscription"/>
+          <include name="verifySuccessMessageYouHaveBeenSuccessfullySubscribedIsVisible"/>
+          <include name="setUpSuite"/>
+          <include name="verifyHomePageIsVisible"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- org.inar.automationexercise.TestCase_11 -->
+      <class name="org.inar.automationexercise.TestCase_04">
+        <methods>
+          <include name="teardown"/>
+          <include name="verifyHomePageIsVisible"/>
+          <include name="verifyThatUserIsNavigatedToLoginPage"/>
+          <include name="setUpSuite"/>
+          <include name="verifyThatLoggedInAsUsernameIsVisible"/>
+          <include name="verifyThatLoginToYourAccountIsVisible"/>
+        </methods>
+      </class> <!-- org.inar.automationexercise.TestCase_04 -->
+      <class name="org.inar.automationexercise.TestCase_21">
+        <methods>
+          <include name="setUpSuite"/>
+          <include name="teardown"/>
+          <include name="verifyUserIsNavigatedToALLPRODUCTSPageSuccessfully"/>
+          <include name="verifyWriteYourReviewIsVisible"/>
+          <include name="verifySuccessMessageThankYouForYourReview"/>
+          <include name="verifyHomePageIsVisible"/>
+        </methods>
+      </class> <!-- org.inar.automationexercise.TestCase_21 -->
+      <class name="org.inar.automationexercise.TestCase_22">
+        <methods>
+          <include name="verifyRECOMMENDEDITEMSAreVisible"/>
+          <include name="setUpSuite"/>
+          <include name="verifyHomePageIsVisible"/>
+          <include name="clickOnViewCartButton"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- org.inar.automationexercise.TestCase_22 -->
+      <class name="org.inar.automationexercise.TestCase_26">
+        <methods>
+          <include name="verifyThatPageIsScrolledUpAndFullFledgedPracticeWebsiteForAutomationEngineersTextIsVisibleOnScreen"/>
+          <include name="teardown"/>
+          <include name="verifyHomePageIsVisible"/>
+          <include name="verifySUBSCRIPTIONIsVisible"/>
+          <include name="setUpSuite"/>
+        </methods>
+      </class> <!-- org.inar.automationexercise.TestCase_26 -->
+      <class name="org.inar.automationexercise.TestCase_09">
+        <methods>
+          <include name="verifyUserIsNavigatedToAllProductsPageSuccessfully"/>
+          <include name="verifyHomePageIsVisible"/>
+          <include name="teardown"/>
+          <include name="verifySearchedProductsIsVisible"/>
+          <include name="setUpSuite"/>
+          <include name="verifyAllTheProductsRelatedToSearchAreVisible"/>
+        </methods>
+      </class> <!-- org.inar.automationexercise.TestCase_09 -->
+      <class name="org.inar.automationexercise.TestCase_18">
+        <methods>
+          <include name="verifyThatCategoryPageIsDisplayedAndConfirmTextWOMEN_DRESS_PRODUCTS"/>
+          <include name="verifyHomePageIsVisible"/>
+          <include name="verifyThatUserIsNavigatedToThatCategoryPage"/>
+          <include name="setUpSuite"/>
+          <include name="teardown"/>
+          <include name="verifyThatCategoriesAreVisibleOnLeftSideBar"/>
+        </methods>
+      </class> <!-- org.inar.automationexercise.TestCase_18 -->
+      <class name="org.inar.automationexercise.TestCase_16">
+        <methods>
+          <include name="verifyAddressDetailsAndReviewYourOrder"/>
+          <include name="teardown"/>
+          <include name="verifyThatCartPageIsDisplayed"/>
+          <include name="goToLoginSingUpPage"/>
+          <include name="verifyHomePageIsVisible"/>
+          <include name="verifySuccessMessageOurOrderHasBeenPlacedSuccessfully"/>
+          <include name="setUpSuite"/>
+          <include name="verifyACCOUNTDELETEDAndClickContinueButton"/>
+          <include name="verifyThatLoggedInAsUsernameIsVisible"/>
+        </methods>
+      </class> <!-- org.inar.automationexercise.TestCase_16 -->
+      <class name="org.inar.automationexercise.TestCase_24">
+        <methods>
+          <include name="verifyHomePageIsVisible"/>
+          <include name="verifyACCOUNTDELETEDAndClickContinueButton"/>
+          <include name="verifyLoggedInAsUsernameAtTop"/>
+          <include name="clickDownloadInvoiceButtonAndVerifyInvoiceIsDownloadedSuccessfully"/>
+          <include name="setUpSuite"/>
+          <include name="verifySuccessMessageOurOrderHasBeenPlacedSuccessfully"/>
+          <include name="verifyAccountCreatedAndClickContinueButton"/>
+          <include name="verifyThatCartPageIsDisplayed"/>
+          <include name="verifyAddressDetailsAndReviewYourOrder"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- org.inar.automationexercise.TestCase_24 -->
+    </classes>
+  </test> <!-- C:/Users/idris/Desktop/NewMaven/com.inar-academy-new-maven/Homework/src/test/java/org/inar/automationexercise(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->
