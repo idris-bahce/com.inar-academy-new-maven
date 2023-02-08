@@ -54,12 +54,10 @@ public class TestCase_01 extends BaseTest{
         signupPage.signupForOurNewsletterBox();
         signupPage.receiveSpecialOffersFromOurTeamBox();
         Driver.getDriver().findElement(By.id("first_name")).sendKeys("idris");
-        Driver.getDriver().findElement(By.id("first_name")).sendKeys("idris");
         Driver.getDriver().findElement(By.id("last_name")).sendKeys("ace");
         Driver.getDriver().findElement(By.id("company")).sendKeys("inar");
         Driver.getDriver().findElement(By.id("address1")).sendKeys("Cal sok. Silver aven.");
         Driver.getDriver().findElement(By.id("address2")).sendKeys("Cal sok. New aven.");
-        Driver.getDriver().findElement(By.id("state")).sendKeys("Pencap");
         Driver.getDriver().findElement(By.id("state")).sendKeys("Pencap");
         Driver.getDriver().findElement(By.id("city")).sendKeys("Delhi");
         Driver.getDriver().findElement(By.id("zipcode")).sendKeys("03300");
