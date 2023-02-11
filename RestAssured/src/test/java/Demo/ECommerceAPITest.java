@@ -43,10 +43,14 @@ public class ECommerceAPITest {
                 .addHeader("authorization", token)
                 .build();
 
-        RequestSpecification reqAddProduct = given().log().all().spec(addProductBaseReq).param("productName", "Laptop")
-                .param("productAddedBy", userId).param("productCategory", "electronics")
-                .param("productSubCategory", "computers").param("productPrice", "11500")
-                .param("productDescription", "Lenovo").param("productFor", "all")
+        RequestSpecification reqAddProduct = given().log().all().spec(addProductBaseReq)
+                .param("productName", "Laptop")
+                .param("productAddedBy", userId)
+                .param("productCategory", "electronics")
+                .param("productSubCategory", "computers")
+                .param("productPrice", "11500")
+                .param("productDescription", "Lenovo")
+                .param("productFor", "all")
                 .multiPart("productImage", new File("C:\\Users\\idris\\Desktop\\NewMaven\\Laptop.jpg"));
 
         String addProductResponse = reqAddProduct.when().post("/api/ecom/product/add-product").
@@ -72,7 +76,6 @@ public class ECommerceAPITest {
 
         String responseAddOrder = createOrderReq.when().post("/api/ecom/order/create-order").then().log().all().extract().response().asString();
         System.out.println(responseAddOrder);
-
 
         //Delete Product
 
