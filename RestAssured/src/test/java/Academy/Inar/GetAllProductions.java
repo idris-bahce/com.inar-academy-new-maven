@@ -1,22 +1,24 @@
 package Academy.Inar;
 
+import NewPojo.Product;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.DeserializationFeature;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.specification.RequestSpecification;
-import NewPojo.Products;
-
 
 import static io.restassured.RestAssured.given;
-public class GetAllProductions {//Couldn't solve the exception problem!
-    public static void main(String[] args) {
 
-        RequestSpecification req = new RequestSpecBuilder().setBaseUri("https://simple-grocery-store-api.glitch.me").build();
 
+public class GetAllProductions {
+    public static void main(String[] args) throws JsonProcessingException {
+
+        RequestSpecification req = new RequestSpecBuilder().setBaseUri("https://simple-grocery-store-api.glitch.me")
+                .build();
         RequestSpecification reqGet = given().log().all().spec(req);
-
-
-        Products products = reqGet.when().get("/products").then().log().all().extract().response().as(Products.class);
-
-        System.out.println(products.getProducts().get(1).getCategory());
+        Product[] product = reqGet.when().get("/products").then().log().all().extract().response().as(Product[].class);
+        System.out.println(product[1].getCategory());
 
     }
 }
